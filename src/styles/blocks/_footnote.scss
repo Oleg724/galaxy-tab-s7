@@ -1,0 +1,29 @@
+@import '../_variables';
+
+.footnote {
+  text-align: center;
+  margin-top: -60px;
+
+  &__text {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .footnote {
+    text-align: right;
+    margin: -253px 6% 94px 0;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .footnote {
+    margin: -157px 6% 94px 0;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .footnote {
+    margin: -125px 6% 94px 0;
+  }
+}

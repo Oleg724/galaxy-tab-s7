@@ -1,0 +1,56 @@
+@import '../_variables';
+
+.title {
+  &__title {
+    color: $white;
+    padding-left: 25px;
+    font-size: 17px;
+    font-family: $font-sharp-bold;
+    line-height: 1.6;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .title {
+
+    &__title {
+      font-size: 25px;
+    }
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .title {
+
+    &__title {
+      font-size: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+
+    &__title {
+      font-size: 13px;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .title {
+
+    &__title {
+      font-size: 16px
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .title {
+
+      &__title {
+        padding-left: 16px;
+      }
+  }
+}

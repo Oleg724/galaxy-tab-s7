@@ -1,0 +1,151 @@
+@import '../_variables';
+
+.title-block-wrapper {
+  max-width: 1440px;
+  width: 100%;
+  position: absolute;
+
+  &--top-8 {
+    top: 8%;
+  }
+
+  &--top-14 {
+    top: 14%;
+  }
+
+  &--display-none {
+    display: none;
+  }
+}
+
+.title-block {
+  margin-left: 16.66%;
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+
+  &__subtitle {
+    font-size: 36px;
+    font-family: $font-sharp-bold;
+    width: 35%;
+    min-width: 390px;
+    padding-top: 30px;
+
+    &--wide {
+      width: 77%;
+    }
+  }
+
+  &__footnote {
+    font-size: 14px;
+    padding-top: 35px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .title-block {
+
+    &__footnote {
+
+      &--display-initial {
+        width: 20%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .title-block {
+
+    &__subtitle {
+      width: 22%;
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .title-block {
+    margin-left: 7.77%;
+
+    &__footnote {
+
+      &--display-initial {
+        display: none;
+      }
+    }
+
+    &__title {
+      font-size: 26px;
+    }
+
+    &__subtitle {
+      font-size: 52px;
+      width: 90%;
+    }
+  }
+
+  .title-block-wrapper {
+
+    &--display-none {
+      display: initial;
+      position: absolute;
+      bottom: 6%;
+      top: initial;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+  .title-block {
+    max-width: initial;
+    width: 90%;
+    margin: 0 auto;
+
+    &--wide {
+      min-width: initial;
+    }
+  }
+}
+
+@media screen and (max-width: 490px) {
+
+  .title-block-wrapper {
+
+    &--display-none {
+      bottom: 0;
+    }
+  }
+
+  .title-block {
+
+    &__subtitle {
+      font-size: 36px;
+      width: 90%;
+      min-width: initial;
+    }
+  }
+}
+
+@media screen and (max-width: 390px) {
+
+  .title-block {
+
+    &__subtitle {
+      font-size: 36px;
+      min-width: initial;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  .title-block {
+
+    &__subtitle {
+      padding-top: 13px;
+    }
+  }
+}

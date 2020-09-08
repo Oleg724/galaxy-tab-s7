@@ -1,0 +1,24 @@
+.banner {
+  width: 100%;
+
+  &--display-none {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 720px) {
+   .banner {
+
+    &--display-none {
+      display: initial;
+    }
+
+    &--display-initial {
+      display: none;
+    }
+
+     &--margin-top {
+       margin-top: 243px;
+     }
+  }
+}
