@@ -8,7 +8,7 @@
   &__img {
     padding: 0 0 0px 0;
     margin: 0 auto;
-    max-width: 100vw;
+    max-width: calc(100vw - #{$side-width});
     width: 100%;
 
     &:first-child {
@@ -17,6 +17,16 @@
 
     &:last-child {
       display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .main-title {
+
+    &__img {
+      width: 100%;
+      max-width: initial;
     }
   }
 }

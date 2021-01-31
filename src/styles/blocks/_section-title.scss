@@ -1,20 +1,55 @@
 @import '../_variables';
 
 .title {
+  &--center {
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+  }
+
   &__title {
     color: $white;
     padding-left: 25px;
     font-size: 17px;
     font-family: $font-sharp-bold;
     line-height: 1.6;
+
+    &--black {
+      color: #000000;
+      display: none;
+      text-align: center;
+    }
+
+    &--sm {
+      font-size: 18px;
+      display: none;
+
+      & span {
+        font-size: 28px;
+      }
+    }
   }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1120px) {
   .title {
 
     &__title {
       font-size: 25px;
+
+      &--black {
+        display: initial;
+        font-size: 53px;
+      }
+
+      &--sm {
+        display: initial;
+        font-size: 20px;
+
+        & span {
+          font-size: 45px;
+        }
+      }
     }
   }
 }
@@ -24,6 +59,19 @@
 
     &__title {
       font-size: 18px;
+
+      &--black {
+        font-size: 44px;
+      }
+
+      &--sm {
+        display: initial;
+        font-size: 18px;
+
+        & span {
+          font-size: 44px;
+        }
+      }
     }
   }
 }
@@ -33,6 +81,19 @@
 
     &__title {
       font-size: 13px;
+
+      &--black {
+        font-size: 37px;
+      }
+
+      &--sm {
+        display: initial;
+        font-size: 18px;
+
+        & span {
+          font-size: 37px;
+        }
+      }
     }
   }
 }
@@ -41,7 +102,20 @@
   .title {
 
     &__title {
-      font-size: 16px
+      font-size: 16px;
+
+      &--black {
+        font-size: 35px;
+      }
+
+      &--sm {
+        display: initial;
+        font-size: 17px;
+
+        & span {
+          font-size: 35px;
+        }
+      }
     }
   }
 }
