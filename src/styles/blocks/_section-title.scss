@@ -37,8 +37,11 @@
     &__title {
       font-size: 25px;
 
+      &--display-none {
+        display: none;
+      }
+
       &--black {
-        display: initial;
         font-size: 53px;
       }
 
@@ -49,6 +52,18 @@
         & span {
           font-size: 45px;
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .title {
+
+    &__title {
+
+      &--display-none {
+        display: initial;
       }
     }
   }

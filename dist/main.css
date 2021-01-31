@@ -286,14 +286,19 @@
 @media screen and (max-width: 1120px) {
   .title__title {
     font-size: 25px; }
+    .title__title--display-none {
+      display: none; }
     .title__title--black {
-      display: initial;
       font-size: 53px; }
     .title__title--sm {
       display: initial;
       font-size: 20px; }
       .title__title--sm span {
         font-size: 45px; } }
+
+@media screen and (max-width: 720px) {
+  .title__title--display-none {
+    display: initial; } }
 
 @media screen and (max-width: 570px) {
   .title__title {
